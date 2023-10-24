@@ -1,0 +1,39 @@
+
+{% extends 'base.html' %} {%block content%}
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center">Result</h2>
+
+                {{data}}
+
+                {% if data == "Prediabetes" %}
+        <div class="alert alert-warning text-center" role="alert">
+            <h4 class="alert-heading">Prediabetes</h4>
+            <p>
+                You are at risk of developing diabetes. Please consult a healthcare professional for further evaluation and guidance.
+            </p>
+        </div>
+    {% elif data == "Diabetes" %}
+        <div class="alert alert-danger text-center" role="alert">
+            <h4 class="alert-heading">Diabetes</h4>
+            <p>
+                You are diagnosed with diabetes. It's crucial to consult a healthcare professional for proper management.
+            </p>
+        </div>
+    {% elif data == "Not Diabetes" %}
+        <div class="alert alert-success text-center" role="alert">
+            <h4 class="alert-heading">No Diabetes Risk</h4>
+            <p>
+                Congratulations! You are not at risk of diabetes. Keep up the good work in maintaining your health and well-being.
+            </p>
+        </div>
+    {% else %}
+        <p>No result to display.</p>
+    {% endif %}
+            </div>
+        </div>
+    </section>
+
+    
+{% endblock %}

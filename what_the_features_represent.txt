@@ -1,0 +1,63 @@
+cdc_dataset.HighBP[cdc_dataset['HighBP'] == 0] = 'No'
+df_vis.HighBP[df_vis['HighBP'] == 1] = 'Yes'
+
+df_vis.HighChol[df_vis['HighChol'] == 0] = 'No'
+df_vis.HighChol[df_vis['HighChol'] == 1] = 'Yes'
+
+df_vis.CholCheck[df_vis['CholCheck'] == 0] = 'No '
+df_vis.CholCheck[df_vis['CholCheck'] == 1] = 'Yes'
+
+df_vis.Smoker[df_vis['Smoker'] == 0] = 'No'
+df_vis.Smoker[df_vis['Smoker'] == 1] = 'Yes'
+
+df_vis.Stroke[df_vis['Stroke'] == 0] = 'No'
+df_vis.Stroke[df_vis['Stroke'] == 1] = 'Yes'
+
+df_vis.HeartDiseaseorAttack[df_vis['HeartDiseaseorAttack'] == 0] = 'No'
+df_vis.HeartDiseaseorAttack[df_vis['HeartDiseaseorAttack'] == 1] = 'Yes'
+
+df_vis.PhysActivity[df_vis['PhysActivity'] == 0] = 'No'
+df_vis.PhysActivity[df_vis['PhysActivity'] == 1] = 'Yes'
+
+df_vis.Fruits[df_vis['Fruits'] == 0] = 'No'
+df_vis.Fruits[df_vis['Fruits'] == 1] = 'Yes'
+
+df_vis.Veggies[df_vis['Veggies'] == 0] = 'No'
+df_vis.Veggies[df_vis['Veggies'] == 1] = 'Yes'
+
+df_vis.HvyAlcoholConsump[df_vis['HvyAlcoholConsump'] == 0] = 'No'
+df_vis.HvyAlcoholConsump[df_vis['HvyAlcoholConsump'] == 1] = 'Yes'
+
+df_vis.AnyHealthcare[df_vis['AnyHealthcare'] == 0] = 'No'
+df_vis.AnyHealthcare[df_vis['AnyHealthcare'] == 1] = 'Yes'
+
+df_vis.NoDocbcCost[df_vis['NoDocbcCost'] == 0] = 'No'
+df_vis.NoDocbcCost[df_vis['NoDocbcCost'] == 1] = 'Yes'
+
+df_vis.GenHlth[df_vis['GenHlth'] == 1] = 'Excellent'
+df_vis.GenHlth[df_vis['GenHlth'] == 2] = 'Very Good'
+df_vis.GenHlth[df_vis['GenHlth'] == 3] = 'Good'
+df_vis.GenHlth[df_vis['GenHlth'] == 4] = 'Fair'
+df_vis.GenHlth[df_vis['GenHlth'] == 5] = 'Poor'
+
+df_vis.DiffWalk[df_vis['DiffWalk'] == 0] = 'No'
+df_vis.DiffWalk[df_vis['DiffWalk'] == 1] = 'Yes'
+
+df_vis.Sex[df_vis['Sex'] == 0] = 'Female'
+df_vis.Sex[df_vis['Sex'] == 1] = 'Male'
+
+df_vis.Education[df_vis['Education'] == 1] = 'Never_Attended_School'
+df_vis.Education[df_vis['Education'] == 2] = 'Elementary'
+df_vis.Education[df_vis['Education'] == 3] = 'Some_high_school'
+df_vis.Education[df_vis['Education'] == 4] = 'High_school_graduate'
+df_vis.Education[df_vis['Education'] == 5] = 'Some_college_or_technical_school'
+df_vis.Education[df_vis['Education'] == 6] = 'College_graduate'
+
+df_vis.Income[df_vis['Income'] == 1] = '<$10,000'
+df_vis.Income[df_vis['Income'] == 2] = '<$10,000'
+df_vis.Income[df_vis['Income'] == 3] = '<$10,000'
+df_vis.Income[df_vis['Income'] == 4] = '<$10,000'
+df_vis.Income[df_vis['Income'] == 5] = '<$35,000'
+df_vis.Income[df_vis['Income'] == 6] = '<$35,000'
+df_vis.Income[df_vis['Income'] == 7] = '<$35,000'
+df_vis.Income[df_vis['Income'] == 8] = '>=$75,000'
